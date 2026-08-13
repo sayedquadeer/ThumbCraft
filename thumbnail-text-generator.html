@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thumbnail Text Overlay Generator - ThumbCraft</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link"><img src="assets/logo.svg" class="logo-img"></a>
+    </div>
+  </header>
+  <main class="tool-page-container">
+    <h2>Thumbnail Text Hook Generator</h2>
+    <form id="text-gen-form" style="margin: 2rem 0;">
+      <div class="form-group">
+        <label class="form-label">Video Niche or Core Message</label>
+        <input type="text" id="topic-input" class="form-control" placeholder="e.g. Passive Income Ideas">
+      </div>
+      <button type="submit" class="btn btn-primary">Generate Text Hooks</button>
+    </form>
+
+    <div id="text-results"></div>
+  </main>
+  <script src="js/utils.js"></script>
+  <script src="js/text-generator.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
