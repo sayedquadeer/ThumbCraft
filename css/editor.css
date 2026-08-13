@@ -1,0 +1,167 @@
+/* Studio Workspace Layout */
+.editor-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr 280px;
+  height: calc(100vh - 71px);
+  overflow: hidden;
+  background: #090D16;
+}
+
+/* Single/Generator Page Layout */
+.tool-page-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.panel {
+  background: var(--bg-surface);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.panel-right {
+  border-right: none;
+  border-left: 1px solid var(--border-color);
+}
+
+.panel-header {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-section {
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.panel-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+}
+
+/* Canvas Area */
+.canvas-stage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #050811;
+  padding: 2rem;
+  position: relative;
+  overflow: auto;
+}
+
+.canvas-toolbar {
+  position: absolute;
+  top: 1rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0.4rem 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+  box-shadow: var(--shadow-sm);
+}
+
+.canvas-container {
+  box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+  border-radius: 4px;
+  position: relative;
+  background: #FFFFFF;
+}
+
+canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Controls & Inputs */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  background: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-main);
+  font-size: 0.9rem;
+  outline: none;
+  transition: var(--transition);
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+}
+
+.row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.color-picker-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  background: transparent;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+}
+
+/* Output Cards for Generators */
+.output-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.output-text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
