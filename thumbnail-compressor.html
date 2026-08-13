@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Client-Side Image Compressor - ThumbCraft</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link"><img src="assets/logo.svg" class="logo-img"></a>
+    </div>
+  </header>
+  <main class="tool-page-container">
+    <h2>Image Size Compressor</h2>
+    <p style="color:var(--text-muted); margin-bottom: 2rem;">Compress thumbnails below YouTube's 2MB limit locally without uploading to server.</p>
+
+    <div class="form-group">
+      <input type="file" id="compressor-upload" accept="image/*" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">Compression Quality: <span id="quality-val">80%</span></label>
+      <input type="range" id="quality-slider" min="10" max="100" value="80" style="width: 100%;">
+    </div>
+
+    <div class="row-2" style="margin: 2rem 0;">
+      <div>Original Size: <strong id="orig-size">0 KB</strong></div>
+      <div>Compressed Size: <strong id="comp-size" style="color: var(--accent-green);">0 KB</strong></div>
+    </div>
+
+    <button id="compressor-download" class="btn btn-primary">Download Compressed Image</button>
+  </main>
+  <script src="js/utils.js"></script>
+  <script src="js/compressor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
