@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Thumbnail Resizer - ThumbCraft</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link"><img src="assets/logo.svg" alt="ThumbCraft" class="logo-img"></a>
+    </div>
+  </header>
+
+  <main class="tool-page-container">
+    <h2>YouTube Image Resizer</h2>
+    <p style="color:var(--text-muted); margin-bottom: 2rem;">Upload any image and format it to optimal platform dimensions.</p>
+
+    <div class="form-group">
+      <input type="file" id="resizer-upload" accept="image/*" class="form-control">
+    </div>
+
+    <div style="display:flex; gap:1rem; margin-bottom:2rem;">
+      <button class="btn btn-secondary preset-btn" data-width="1280" data-height="720">YouTube Thumbnail (1280x720)</button>
+      <button class="btn btn-secondary preset-btn" data-width="1080" data-height="1920">Shorts (1080x1920)</button>
+    </div>
+
+    <div class="canvas-container" style="max-width: 600px; margin: 0 auto 2rem;">
+      <canvas id="resizer-canvas"></canvas>
+    </div>
+
+    <button id="resizer-download" class="btn btn-primary">Download Resized Image</button>
+  </main>
+
+  <script src="js/utils.js"></script>
+  <script src="js/resizer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
