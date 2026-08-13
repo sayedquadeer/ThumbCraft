@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free YouTube Thumbnail Maker Studio - ThumbCraft</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/editor.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="assets/logo.svg" alt="ThumbCraft Logo" class="logo-img">
+      </a>
+      <div>
+        <button id="download-jpg" class="btn btn-secondary btn-sm">Export JPG</button>
+        <button id="download-png" class="btn btn-primary btn-sm">Export PNG (HD)</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="editor-layout">
+    <!-- Left Panel Controls -->
+    <div class="panel">
+      <div class="panel-header">Studio Controls</div>
+      
+      <div class="panel-section">
+        <div class="panel-title">Canvas Settings</div>
+        <div class="form-group">
+          <label class="form-label">Background Color</label>
+          <div class="color-picker-wrapper">
+            <input type="color" id="bg-color-picker" value="#0F172A">
+            <span>Choose Fill Color</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel-section">
+        <div class="panel-title">Add Elements</div>
+        <button id="add-text-btn" class="btn btn-secondary" style="width: 100%; margin-bottom: 0.75rem;">+ Add Text Element</button>
+        <div class="form-group">
+          <label class="form-label">Upload Image Layer</label>
+          <input type="file" id="image-upload" accept="image/*" class="form-control">
+        </div>
+      </div>
+    </div>
+
+    <!-- Center Stage -->
+    <div class="canvas-stage">
+      <div class="canvas-container">
+        <canvas id="thumbnail-canvas"></canvas>
+      </div>
+    </div>
+
+    <!-- Right Properties Panel -->
+    <div class="panel panel-right">
+      <div class="panel-header">Layer Properties</div>
+      <div class="panel-section">
+        <p style="color: var(--text-muted); font-size: 0.85rem;">Select an element on the canvas to drag and position.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/thumbnail-maker.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
