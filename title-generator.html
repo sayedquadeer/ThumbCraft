@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Title Generator - ThumbCraft</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/editor.css">
+</head>
+<body>
+  <header class="header">
+    <div class="nav-container">
+      <a href="index.html" class="logo-link"><img src="assets/logo.svg" class="logo-img"></a>
+    </div>
+  </header>
+  <main class="tool-page-container">
+    <h2>YouTube Video Title Ideas Generator</h2>
+    <form id="title-form" style="margin: 2rem 0;">
+      <div class="form-group">
+        <label class="form-label">Video Topic or Keyword</label>
+        <input type="text" id="topic-input" class="form-control" placeholder="e.g. Photoshop Tutorial, Minecraft Speedrun">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Tone Style</label>
+        <select id="tone-select" class="form-control">
+          <option value="curiosity">Curiosity & Mystery</option>
+          <option value="educational">Educational & How-To</option>
+          <option value="viral">High-Energy Viral</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Generate Ideas</button>
+    </form>
+
+    <div id="title-results"></div>
+  </main>
+  <script src="js/utils.js"></script>
+  <script src="js/title-generator.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
