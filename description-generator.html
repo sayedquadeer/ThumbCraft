@@ -69,11 +69,11 @@
       </div>
 
       <div class="output-container" style="margin-top: 2rem;">
-        <label for="outputResult">Generated Description Output</label>
+        <label for="outputResult" style="display: block; font-weight: 600; margin-bottom: 0.5rem;">Generated Description Output</label>
         <textarea id="outputResult" rows="8" readonly class="form-control" placeholder="Your generated description will appear here..."></textarea>
-        <div class="output-meta" style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.5rem; font-size: 0.875rem; color: #666;">
+        <div class="output-meta">
           <span id="counterStats">Characters: 0 | Words: 0</span>
-          <button id="copyBtn" class="btn btn-outline" style="padding: 0.4rem 1rem;">Copy to Clipboard</button>
+          <button id="copyBtn" class="btn btn-outline">Copy to Clipboard</button>
         </div>
       </div>
     </div>
@@ -110,7 +110,6 @@
     </div>
   </footer>
 
-  <!-- Generator Script -->
   <script>
     const hamburgerBtn = document.getElementById('hamburgerBtn');
     const mainNav = document.getElementById('mainNav');
@@ -185,3 +184,4 @@
   </script>
 </body>
 </html>
+
