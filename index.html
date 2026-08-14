@@ -3,140 +3,209 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ThumbCraft - Free YouTube Creator Toolkit</title>
-  <meta name="description" content="Free, fast, browser-based tools for YouTube creators. Generate video descriptions, thumbnails, and optimize your content metadata effortlessly.">
+  <title>Free YouTube Creator Tools | ThumbCraft</title>
+  <meta name="description" content="Create thumbnails, titles, descriptions, banners and more with fast, simple and easy-to-use creator tools designed for YouTube creators.">
   <link rel="canonical" href="https://sayedquadeer.github.io/ThumbCraft/">
   
-  <!-- Open Graph / Facebook -->
+  <!-- Open Graph / Social -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://sayedquadeer.github.io/ThumbCraft/">
-  <meta property="og:title" content="ThumbCraft - Free YouTube Creator Toolkit">
-  <meta property="og:description" content="Free browser-based tools for YouTube creators. Generate video descriptions, keywords, and optimizing tools without API keys.">
+  <meta property="og:title" content="Free YouTube Creator Tools | ThumbCraft">
+  <meta property="og:description" content="Create thumbnails, titles, descriptions, banners and more with fast, simple and easy-to-use creator tools.">
   <meta property="og:image" content="https://sayedquadeer.github.io/ThumbCraft/assets/og-image.png">
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://sayedquadeer.github.io/ThumbCraft/">
-  <meta property="twitter:title" content="ThumbCraft - Free YouTube Creator Toolkit">
-  <meta property="twitter:description" content="Free browser-based tools for YouTube creators. Generate video descriptions, keywords, and optimizing tools without API keys.">
-  <meta property="twitter:image" content="https://sayedquadeer.github.io/ThumbCraft/assets/og-image.png">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Free YouTube Creator Tools | ThumbCraft">
+  <meta name="twitter:description" content="Create thumbnails, titles, descriptions, banners and more with fast, simple and easy-to-use creator tools.">
 
-  <link rel="stylesheet" href="css/style.css" onerror="this.removeAttribute('onerror')">
-  <style>
-    :root {
-      --bg-color: #0f0f13;
-      --card-bg: #1a1a24;
-      --accent: #ff0055;
-      --accent-hover: #ff2a70;
-      --text-main: #f0f0f5;
-      --text-muted: #a0a0b0;
-      --border: #2a2a38;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-main);
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-    header {
-      background: var(--card-bg);
-      border-bottom: 1px solid var(--border);
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header a { color: inherit; text-decoration: none; }
-    .logo { font-size: 1.5rem; font-weight: bold; color: var(--accent); }
-    nav a { margin-left: 1.5rem; color: var(--text-muted); text-decoration: none; transition: color 0.2s; }
-    nav a:hover { color: var(--text-main); }
-    main { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; flex: 1; }
-    .hero { text-align: center; margin-bottom: 3rem; }
-    .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    .hero p { color: var(--text-muted); font-size: 1.1rem; }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.2s, border-color 0.2s;
-    }
-    .card:hover { transform: translateY(-4px); border-color: var(--accent); }
-    .card h2 { font-size: 1.25rem; margin-bottom: 0.5rem; color: #fff; }
-    .card p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
-    .btn {
-      display: inline-block;
-      background: var(--accent);
-      color: #fff;
-      padding: 0.6rem 1.2rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      text-align: center;
-      transition: background 0.2s;
-    }
-    .btn:hover { background: var(--accent-hover); }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: var(--text-muted);
-      border-top: 1px solid var(--border);
-      margin-top: 3rem;
-      font-size: 0.9rem;
-    }
-  </style>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-  <header>
-    <a href="./index.html" class="logo">ThumbCraft</a>
-    <nav>
-      <a href="./index.html">Home</a>
-      <a href="./description-generator.html">Description Generator</a>
-    </nav>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="./" class="logo" aria-label="ThumbCraft Home">
+        <span class="logo-icon">🎬</span> ThumbCraft
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="./" class="active">Home</a>
+        <a href="#tools">Tools</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero">
-      <h1>YouTube Creator Toolkit</h1>
-      <p>Free, fast, and privacy-focused tools to level up your YouTube channel.</p>
+      <div class="container hero-content">
+        <span class="badge">🚀 Built for YouTube Creators</span>
+        <h1>Free YouTube Creator Tools</h1>
+        <p class="hero-subtitle">Create thumbnails, titles, descriptions, banners and more with fast, simple and easy-to-use creator tools.</p>
+        <div class="hero-buttons">
+          <a href="#tools" class="btn btn-primary">Explore All Tools</a>
+          <a href="./description-generator.html" class="btn btn-secondary">Create a Description</a>
+        </div>
+      </div>
     </section>
 
-    <section class="grid">
-      <div class="card">
-        <div>
-          <h2>YouTube Description Generator</h2>
-          <p>Generate SEO-optimized YouTube descriptions with keywords, custom tones, call-to-actions, and timestamps.</p>
+    <!-- Featured Tools Section -->
+    <section id="tools" class="tools-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Featured Creator Tools</h2>
+          <p>Boost your channel growth with our most popular utilities.</p>
         </div>
-        <a href="./description-generator.html" class="btn">Launch Generator</a>
+        <div class="tools-grid">
+          <!-- Tool Card 1 -->
+          <div class="tool-card">
+            <div class="tool-icon">📝</div>
+            <h3>YouTube Description Generator</h3>
+            <p>Generate clean, optimized, and professional video descriptions instantly.</p>
+            <a href="./description-generator.html" class="btn btn-outline">Open Tool</a>
+          </div>
+          <!-- Add other core tool cards matching repository structure -->
+          <div class="tool-card">
+            <div class="tool-icon">🖼️</div>
+            <h3>Thumbnail Maker</h3>
+            <p>Design high-converting, eye-catching thumbnails right in your browser.</p>
+            <a href="./thumbnail-maker.html" class="btn btn-outline">Open Tool</a>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">⚡</div>
+            <h3>Thumbnail Resizer & Compressor</h3>
+            <p>Optimize image file dimensions and compress sizes strictly for YouTube standards.</p>
+            <a href="./thumbnail-resizer.html" class="btn btn-outline">Open Tool</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why ThumbCraft Section -->
+    <section class="features-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Why Choose ThumbCraft?</h2>
+          <p>Engineered to save you time and maximize viewer engagement.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-box">
+            <h4>⚡ Lightning Fast</h4>
+            <p>Client-side processing ensures your data stays private and tasks complete instantly.</p>
+          </div>
+          <div class="feature-box">
+            <h4>📱 Fully Responsive</h4>
+            <p>Craft content seamlessly across desktops, tablets, and smartphones on the go.</p>
+          </div>
+          <div class="feature-box">
+            <h4>🔒 100% Free & Secure</h4>
+            <p>No forced subscriptions, hidden watermarks, or intrusive tracking software.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="workflow-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>How It Works</h2>
+          <p>Get your videos ready for publishing in three simple steps.</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step">
+            <span class="step-num">1</span>
+            <h3>Select a Tool</h3>
+            <p>Choose from our suite of specialized YouTube utilities.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">2</span>
+            <h3>Input Details</h3>
+            <p>Provide your video context or upload source assets.</p>
+          </div>
+          <div class="step">
+            <span class="step-num">3</span>
+            <h3>Export & Publish</h3>
+            <p>Copy text outputs or download optimized media files instantly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Are ThumbCraft tools completely free?</summary>
+            <p>Yes, all creator tools provided on ThumbCraft are completely free to use with no hidden paywalls.</p>
+          </details>
+          <details>
+            <summary>Do I need to install any software?</summary>
+            <p>No installation is required. Everything runs entirely within your modern web browser.</p>
+          </details>
+          <details>
+            <summary>Are my uploaded images secure?</summary>
+            <p>All image processing happens locally on your device via client-side rendering. Your images are never uploaded to an external server.</p>
+          </details>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2026 ThumbCraft. Built for YouTube Creators.</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <a href="./" class="logo"><span class="logo-icon">🎬</span> ThumbCraft</a>
+        <p>The ultimate lightweight toolkit for modern YouTube creators.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="./privacy.html">Privacy Policy</a></li>
+          <li><a href="./terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 ThumbCraft. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 
+  <!-- Script for Mobile Menu -->
   <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./sw.js')
-          .then(reg => console.log('Service Worker registered.'))
-          .catch(err => console.log('Service Worker registration failed:', err));
-      });
-    }
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mainNav = document.getElementById('mainNav');
+
+    hamburgerBtn.addEventListener('click', () => {
+      const expanded = hamburgerBtn.getAttribute('aria-expanded') === 'true' || false;
+      hamburgerBtn.setAttribute('aria-expanded', !expanded);
+      hamburgerBtn.classList.toggle('open');
+      mainNav.classList.toggle('open');
+    });
   </script>
 </body>
 </html>
